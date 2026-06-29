@@ -1,0 +1,27 @@
+ANDROID STUDIO OLMADAN APK ALMA - GITHUB ACTIONS YONTEMI
+
+Bu klasor GitHub'a yuklendiginde APK otomatik derlenir.
+
+1) github.com sitesine gir ve hesabina giris yap.
+2) Sag ustten + isaretine bas > New repository.
+3) Repository name kismina sunu yaz:
+   HavaDurumuPosterApp
+4) Public veya Private secebilirsin.
+5) Create repository de.
+6) ZIP'ten cikan HavaDurumuPosterApp klasorunun ICINDEKI tum dosyalari GitHub repo ekranina surukle-birak.
+   Dikkat: Klasorun kendisini degil, klasorun icindeki app, build.gradle, settings.gradle, .github gibi dosyalari yukle.
+7) Commit changes de.
+8) Ust menuden Actions kismina gir.
+9) Build APK workflow'unu ac.
+10) Run workflow butonu varsa bas. Yoksa dosyalari yukledigin anda otomatik baslar.
+11) Islem bitince ayni sayfada Artifacts kisminda HavaDurumuPosterApp-debug-apk cikar.
+12) Onu indir. ZIP icindeki app-debug.apk senin uygulamandir.
+
+Telefona yuklemek icin:
+- APK'yi telefona at.
+- Android izin isterse 'Bilinmeyen uygulamalari yukleme' iznini ac.
+- app-debug.apk dosyasina dokunup kur.
+
+Not:
+Bu debug APK'dir. Kendi cihazinda kurulum/test icin uygundur.
+Google Play Store'a yuklemek icin release APK/AAB ve imzalama gerekir.
